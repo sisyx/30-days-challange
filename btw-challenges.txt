@@ -1,0 +1,164 @@
+
+RULES
+-----
+1. Build something that runs. It does not need to be perfect.
+2. Use the Go standard library first.
+3. If you miss a day, don't double your workload the next day.
+4. Keep each experiment in its own directory and commit it to Git.
+5. At the end of the day, write three lines:
+   - What I built
+   - What surprised me
+   - What I want to understand better
+
+
+WEEK 1: ENGINEERING EXPERIMENTS
+-------------------------------
+
+[X] Day 01 - Build your own curl [Easy]
+    Send HTTP GET requests. Print status, headers, body size, and latency.
+    Learn: net/http, io, time.
+
+[X] Day 02 - Build a TCP chat room [Moderate]
+    Connect multiple terminal clients to one TCP server and broadcast messages.
+    Learn: net, goroutines, channels.
+
+[ ] Day 03 - Build a port scanner [Easy-Moderate]
+    Scan a chosen localhost or authorized host for open TCP ports.
+    Add connection timeouts and a small worker pool.
+    Learn: net.DialTimeout, concurrency.
+
+[ ] Day 04 - Build a mini reverse proxy [Moderate]
+    Accept requests on :8080, forward them to :3000, and log each request.
+    Learn: net/http/httputil, HTTP headers.
+
+[ ] Day 05 - Build a log analyzer [Easy-Moderate]
+    Read an Nginx access log. Show top IPs, status codes, and paths.
+    Learn: bufio, parsing, maps, sorting.
+
+[ ] Day 06 - Build a file change watcher [Moderate]
+    Detect added, changed, and deleted files via periodic directory snapshots.
+    Learn: os, filepath, time, maps.
+
+[ ] Day 07 - Build a tiny load tester [Moderate]
+    Send concurrent HTTP requests to YOUR local test server.
+    Print throughput, failures, and p50/p95 response latency.
+    Learn: goroutines, sync, basic statistics.
+
+
+WEEK 2: LINUX, FILES, AND THE OS
+--------------------------------
+
+[ ] Day 08 - Rebuild a tiny wc [Easy]
+    Count lines, words, and bytes in a file using streaming reads.
+    Learn: bufio, io.
+
+[ ] Day 09 - Build a mini grep [Easy]
+    Find matching lines in files and print their line numbers.
+    Learn: strings, bufio, CLI arguments.
+
+[ ] Day 10 - Explore the filesystem [Moderate]
+    Walk a directory and summarize files grouped by extension.
+    Learn: filepath.WalkDir, maps.
+
+[ ] Day 11 - Build a file checksum tool [Easy]
+    Compute SHA-256 for two files and compare their contents.
+    Learn: crypto/sha256, io.Copy.
+
+[ ] Day 12 - Inspect environment variables [Easy]
+    Read configuration from env vars, with defaults and validation.
+    Learn: os.Getenv, configuration.
+
+[ ] Day 13 - Build a process runner [Moderate]
+    Run a command, capture stdout/stderr, and report its exit status.
+    Learn: os/exec, errors.
+
+[ ] Day 14 - Build a system inspector [Moderate]
+    Print hostname, OS, CPU count, Go version, and network interfaces.
+    Learn: os, runtime, net.
+
+
+WEEK 3: NETWORKING AND HTTP
+---------------------------
+
+[ ] Day 15 - Build a DNS lookup tool [Easy]
+    Resolve a domain to its IPv4 and IPv6 addresses.
+    Learn: net.LookupIP, DNS basics.
+
+[ ] Day 16 - Create a TCP port checker [Easy]
+    Check whether a specified host:port accepts a TCP connection.
+    Explain the difference between refused and timed out.
+    Learn: net.DialTimeout, network errors.
+
+[ ] Day 17 - Build an HTTP inspector [Easy]
+    Send an HTTP request and print response status and headers.
+    Try redirect handling and compare with your Day 01 client.
+    Learn: http.Client, redirects.
+
+[ ] Day 18 - Learn request timeouts [Moderate]
+    Add context cancellation and a configurable HTTP timeout.
+    Learn: context, deadlines.
+
+[ ] Day 19 - Build a tiny web server [Easy]
+    Implement GET /health and GET /hello using net/http.
+    Learn: handlers, routing.
+
+[ ] Day 20 - Create a JSON API [Easy]
+    Serve /system with timestamp, hostname, and Go version as JSON.
+    Learn: encoding/json, HTTP responses.
+
+[ ] Day 21 - Build a TCP echo server [Moderate]
+    Write a TCP server that echoes messages, plus a Go test client.
+    Learn: TCP framing, bufio, net.Conn.
+
+
+WEEK 4: THINKING LIKE A SYSTEMS ENGINEER
+----------------------------------------
+
+[ ] Day 22 - Launch a worker pool [Moderate]
+    Process independent jobs with a fixed number of goroutines.
+    Learn: goroutines, sync.WaitGroup.
+
+[ ] Day 23 - Collect results with channels [Moderate]
+    Send worker results to a channel and aggregate them safely.
+    Learn: channels, synchronization.
+
+[ ] Day 24 - Find and fix a race condition [Moderate]
+    Share a counter unsafely, detect the race with go test -race,
+    and fix it with a mutex or atomic operation.
+    Learn: race detector, sync.
+
+[ ] Day 25 - Build a website status checker [Moderate]
+    Check a few URLs concurrently and print status and latency.
+    Learn: HTTP clients, concurrency limits.
+
+[ ] Day 26 - Add structured logging [Easy]
+    Use log/slog to log requests, failures, and durations.
+    Learn: structured logs, observability.
+
+[ ] Day 27 - Implement graceful shutdown [Moderate]
+    Handle Ctrl+C, cancel ongoing work, and exit cleanly.
+    Learn: os/signal, context.
+
+[ ] Day 28 - Write HTTP tests [Moderate]
+    Use httptest to test success, failure, and timeout behavior.
+    Learn: testing, net/http/httptest.
+
+[ ] Day 29 - Package your tool [Easy]
+    Add command-line flags, write a README, and build a binary.
+    Learn: flag, go build, documentation.
+
+[ ] Day 30 - FINAL BOSS: Your Go toolbox [Moderate]
+    Combine your favorite utilities into one CLI named gobox.
+    Demo it and write down three things you now understand better.
+    Example commands:
+      gobox dns example.com
+      gobox tcp localhost 5432
+      gobox hash ./backup.sql
+      gobox system
+      gobox check urls.txt
+
+
+REMEMBER
+--------
+The point is not to become a different person in 30 days.
+The point is to have fun, keep a daily rhythm, and learn a little Go.
