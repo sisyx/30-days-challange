@@ -52,7 +52,7 @@ func execute(method, url string) (string, error) {
 
 	switch strings.ToLower(method) {
 	case "post":
-		resp, err = http.Post(url, "application/json", nil)
+e		resp, err = http.Post(url, "application/json", nil)
 	default:
 		resp, err = http.Get(url)
 	}
