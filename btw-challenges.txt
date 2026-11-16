@@ -14,7 +14,7 @@ RULES
 WEEK 1: ENGINEERING EXPERIMENTS
 -------------------------------
 
-[X] Day 01 - Build your own curl [Easy]
+[X] Day 01 - Build your own cucrl [Easy]
     Send HTTP GET requests. Print status, headers, body size, and latency.
     Learn: net/http, io, time.
 
@@ -22,7 +22,7 @@ WEEK 1: ENGINEERING EXPERIMENTS
     Connect multiple terminal clients to one TCP server and broadcast messages.
     Learn: net, goroutines, channels.
 
-[ ] Day 03 - Build a port scanner [Easy-Moderate]
+[X] Day 03 - Build a port scanner [Easy-Moderate]
     Scan a chosen localhost or authorized host for open TCP ports.
     Add connection timeouts and a small worker pool.
     Learn: net.DialTimeout, concurrency.
