@@ -27,7 +27,7 @@ WEEK 1: ENGINEERING EXPERIMENTS
     Add connection timeouts and a small worker pool.
     Learn: net.DialTimeout, concurrency.
 
-[ ] Day 04 - Build a mini reverse proxy [Moderate]
+[X] Day 04 - Build a mini reverse proxy [Moderate]
     Accept requests on :8080, forward them to :3000, and log each request.
     Learn: net/http/httputil, HTTP headers.
 
