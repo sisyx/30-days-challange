@@ -31,7 +31,7 @@ WEEK 1: ENGINEERING EXPERIMENTS
     Accept requests on :8080, forward them to :3000, and log each request.
     Learn: net/http/httputil, HTTP headers.
 
-[ ] Day 05 - Build a log analyzer [Easy-Moderate]
+[X] Day 05 - Build a log analyzer [Easy-Moderate]
     Read an Nginx access log. Show top IPs, status codes, and paths.
     Learn: bufio, parsing, maps, sorting.
 
