@@ -35,7 +35,7 @@ WEEK 1: ENGINEERING EXPERIMENTS
     Read an Nginx access log. Show top IPs, status codes, and paths.
     Learn: bufio, parsing, maps, sorting.
 
-[ ] Day 06 - Build a file change watcher [Moderate]
+[X] Day 06 - Build a file change watcher [Moderate]
     Detect added, changed, and deleted files via periodic directory snapshots.
     Learn: os, filepath, time, maps.
 
