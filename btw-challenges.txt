@@ -52,7 +52,7 @@ WEEK 2: LINUX, FILES, AND THE OS
     Count lines, words, and bytes in a file using streaming reads.
     Learn: bufio, io.
 
-[ ] Day 09 - Build a mini grep [Easy]
+[X] Day 09 - Build a mini grep [Easy]
     Find matching lines in files and print their line numbers.
     Learn: strings, bufio, CLI arguments.
 
