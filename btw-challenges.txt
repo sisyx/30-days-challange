@@ -56,7 +56,7 @@ WEEK 2: LINUX, FILES, AND THE OS
     Find matching lines in files and print their line numbers.
     Learn: strings, bufio, CLI arguments.
 
-[ ] Day 10 - Explore the filesystem [Moderate]
+[X] Day 10 - Explore the filesystem [Moderate]
     Walk a directory and summarize files grouped by extension.
     Learn: filepath.WalkDir, maps.
 

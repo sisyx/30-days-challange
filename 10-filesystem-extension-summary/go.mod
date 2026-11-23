@@ -1,0 +1,3 @@
+module fes
+
+go 1.27.3
