@@ -60,7 +60,7 @@ WEEK 2: LINUX, FILES, AND THE OS
     Walk a directory and summarize files grouped by extension.
     Learn: filepath.WalkDir, maps.
 
-[ ] Day 11 - Build a file checksum tool [Easy]
+[X] Day 11 - Build a file checksum tool [Easy]
     Compute SHA-256 for two files and compare their contents.
     Learn: crypto/sha256, io.Copy.
 
